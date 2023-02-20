@@ -42,19 +42,280 @@
     <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/nav-logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#about"> About </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#impact"> Impact </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#Programs"> Programs </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#pricing"> Pricing </a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta"> Donate </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
     <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <img
+              class="bizz-logo"
+              alt="Omnifood logo"
+              src="../img/bizznest-logo.png"
+            />
+            <h1 class="heading-primary-white">turn ideas into reality.</h1>
+            <p class="hero-description">
+              bizzNEST is a team of young creatives who provide budget-friendly
+              web design, video, graphic design and photography services that
+              help propel businesses forward to achieve their goals.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm">
+              Start eating well
+            </a>
+
+            <a href="#how" class="btn btn--outline"> Learn more &darr; </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <p class="subheading">About</p>
+            <h3 class="heading-primary-styled">bizzNEST</h3>
+            <p class="step-description">
+              Our bizzNEST interns are hired into a paid, in-house two year
+              internship program that simulates a digital media agency. Our goal
+              is to deliver high-quality digital media services that both
+              empower your business or organization through creative marketing
+              collateral and provide interns the opportunity to polish their
+              technical and soft skills through on-the- job training and staff
+              mentorship.
+            </p>
+
+            <a class="btn btn--outline" href="#cta"> Hire us &rarr; </a>
+          </div>
+
+          <div className="step-img-box">
+            <img src="./img/img-programs.png" class="step-img" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container margin-bottom-md">
+          <span class="subheading">WHAT WE CREATE</span>
+          <h2 class="heading-secondary">Services</h2>
+          <p class="step-description">
+            bizzNEST is a team of young creatives who provide budget-friendly
+            web design, video, graphic design and photography services that help
+            propel businesses forward to achieve their goals. bizzNEST youth
+            have access to the latest software and camera equipment to deliver
+            quality marketing services at below- market rates.
+          </p>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="./img/img-graphic.jpg"
+              class="meal-img"
+              alt="DigitalNEST Graphic Design"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Branding</span>
+              </div>
+              <p class="meal-title">Graphic Design</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="bulb-outline"></ion-icon>
+                  <span>Logos</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="logo-instagram"></ion-icon>
+                  <span> <strong>Social Media</strong> Graphics </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="map-outline"></ion-icon>
+                  <span>Flyers</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="images-outline"></ion-icon>
+                  <span>Business Cards</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="./img/webdev-img.jpg"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Branding</span>
+              </div>
+              <p class="meal-title">Web Design & Development</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="construct-outline"
+                  ></ion-icon>
+
+                  <span>Website Re-designs</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="desktop-outline"></ion-icon>
+                  <span> <strong>Front-end</strong> Development </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="server-outline"></ion-icon>
+                  <span> <strong>Back-end</strong> Development </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="logo-wordpress"></ion-icon>
+                  <span> <strong>WordPress</strong> & more </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="./img/img-graphic.jpg"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Branding</span>
+              </div>
+              <p class="meal-title">Video Production</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cut-outline"></ion-icon>
+                  <span>Video Editing</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="megaphone-outline"
+                  ></ion-icon>
+                  <span>Promotional Videos</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="school-outline"></ion-icon>
+                  <span>Instructional Videos</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="videocam-outline"
+                  ></ion-icon>
+                  <span>Testimonial Videos</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-bg" id="how">
+        <div class="container">
+          <span class="subheading">Become a client</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Project Request</h3>
+            <p class="step-description">
+              Please take the time to complete our screening form. Provide us
+              with as much information as you can about what you would like our
+              team to build. We guarantee a response within 48 business hours of
+              submission.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img src="./img/img-service-one.png" class="step-img big" alt="" />
+          </div>
+
+          <!-- STEP 2 -->
+
+          <div class="step-img-box">
+            <img src="./img//img-service-two.png" class="step-img" alt="" />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Client Intake Meeting</h3>
+            <p class="step-description">
+              We'll get in touch with you and collect additional information to
+              help us determine if we are able to accommodate your needs and
+              ensure that the project is completed according to your timeline.
+              <strong> (We stay bizzsy at BizzNEST!)</strong> Rest assured, we
+              provide flexible timelines.
+            </p>
+          </div>
+
+          <!-- STEP 3 -->
+
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Creat Contract</h3>
+            <p class="step-description">
+              If you decide to work with us, we will craft a contract tailored
+              to your needs and budget. Once you sign off, we will get to work
+              right away!
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="./img/img-service-three.png"
+              class="step-img med"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
       <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <h2 class="heading-secondary">bizzNEST Project Request</h2>
               <p class="cta-text">
-                Healthy, tasty and hassle-free meals are waiting for you. Start
-                eating well today. You can cancel or pause anytime. And the
-                first meal is on us!
+                First, we need you to ﬁll out our screening form. Once you
+                submit the form, we promise you will hear from us in 48 hours.
+                Thank you for choosing us for your next project!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" name="project-request" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input

@@ -1,4 +1,356 @@
 /**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(52, 170, 122);
+  background: linear-gradient(
+    184deg,
+    rgba(52, 170, 122, 1) 0%,
+    rgba(114, 198, 164, 0.894) 100%
+  );
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 4.8rem;
+}
+
+.bizz-logo {
+  height: 11.8rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-grey-light-2);
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#222, 0.2);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-primary-50);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: var(--color-primary-50);
+
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#222, 0.2);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--color-primary-100);
+  transform: scaleX(1.4) scaleY(1.6);
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  /* background-color: #fdf2e9; */
+  background-image: url(../img/bizznest-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* padding: 9.8rem 0 12.6rem 0; */
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #fff;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/**************************/
+/* SECTION ABOUT */
+/**************************/
+
+.section,
+.section-bg {
+  padding: 12.6rem 0;
+  position: relative;
+}
+
+.section-bg::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.06;
+  background-image: url(../img/background-matte.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: 0;
+}
+
+.step-number {
+  font-weight: 500;
+  color: var(--color-secondary-10);
+  font-size: 9.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.step-text {
+  font-size: 1.6rem;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-secondary-300);
+  margin-bottom: 1.3rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding-bottom: 4rem;
+}
+
+.step-description-secondary {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding-bottom: 4.5rem;
+}
+.step-description-tertiary {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 700;
+  padding-bottom: 4.5rem;
+  padding: 1rem;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.step-img-box::before {
+  /* 60% of parent's width  */
+  padding-bottom: 60%;
+
+  background-color: var(--color-primary-300);
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: var(--color-secondary-300);
+  z-index: -1;
+}
+
+.step-img {
+  width: 80%;
+  padding: 1rem 0;
+  border-radius: 3rem;
+
+  z-index: 10;
+}
+
+.big {
+  width: 110%;
+}
+
+.med {
+  width: 50%;
+}
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-meals {
+  padding: 12.6rem 0;
+  position: relative;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #72c6a4;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #ba2d8e;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/**************************/
 /* CTA SECTION */
 /**************************/
 

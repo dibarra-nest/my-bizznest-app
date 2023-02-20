@@ -1,3 +1,31 @@
+:root {
+  /* Colors */
+  --color-primary-50: #ba2d8e;
+  --color-primary-100: #cf6cb0;
+  --color-primary-200: #dd96c7;
+  --color-primary-300: #f1d5e8;
+
+  --color-secondary-10: #5eba95;
+  --color-secondary-50: #72c6a4;
+  --color-secondary-200: #8ed1b6;
+  --color-secondary-300: #aaddc8;
+  --color-secondary-400: #d5eee4;
+  --color-secondary-500: #f1f9f6;
+
+  --color-tertiary: #fbcc0d;
+
+  --default-font-size: 1.8rem;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --clr-primary: hsl(0, 50%, 98%);
+  --body-bg: linear-gradient(120deg, hsl(0, 0%, 18%) 10%, hsl(0, 0%, 2%));
+  --inner-bg: black;
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +52,105 @@ body {
 
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+*/
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* Prevent Text Overflow */
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  /* Help prevent overflow of long words/names/URLs */
+  word-break: break-word;
+
+  /* // Optional, not supported for all languages: */
+  hyphens: auto;
+
+  /* // Clear top margin */
+  margin-top: 0;
+}
+
+/* // Button Styling Resets */
+a.button {
+  text-decoration: none;
+}
+
+/* // Reset default button styles */
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+/* // Flex alignment comes in handy should you add icons in the future, or impose width restrictions. */
+
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Visual */
+  /*  ... existing styles */
+  /*  background-color: $btnColor; */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+}
+
+a.button:focus,
+button.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background: transparent;
+  /* -webkit-appearance: none; */
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /**************************/
@@ -71,4 +198,159 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading-primary-styled {
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  color: var(--color-grey-dark-3);
+  z-index: 10;
+  box-shadow: 0 1.5rem 4rem rgba(#333, 0.7);
+  background-image: linear-gradient(
+    to right,
+    var(--color-secondary-10),
+    var(--color-secondary-200),
+    var(--color-secondary-50)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+
+.heading-primary-styled:hover {
+  transform: scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(#333, 0.2);
+}
+
+.heading-primary-white {
+  font-weight: 800;
+  font-size: 6rem;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 2.8rem;
+  text-transform: capitalize;
+  color: #f7f7f7;
+  z-index: 10;
+  box-shadow: 0 1.5rem 4rem rgba(#333, 0.7);
+  transition: all 0.2s;
+
+  padding-top: 1rem;
+}
+
+.heading-secondary {
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+
+  /* &--center {
+    color: var(--color-primary);
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 1.05;
+  } */
+}
+
+.heading-secondary--center {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1.05;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.5rem;
+  text-transform: capitalize;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary-100);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.85px;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 40px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-secondary-50);
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-secondary-400);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  border: 3px solid var(--color-primary-50);
+
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--color-secondary-50);
+
+  border: 3px solid var(--color-secondary-50);
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: var(--color-primary-50);
+  color: #f7f7f7;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: var(--color-grey-dark-3);
+  color: var(--color-secondary-300);
 }
