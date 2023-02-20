@@ -196,6 +196,21 @@
   .main-nav-link:active {
     color: var(--color-primary-50);
   }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    background-image: url(../img/background-matte.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: cover;
+    z-index: 0;
+  }
 }
 
 /**************************/
@@ -212,15 +227,30 @@
   .grid--4-cols {
     grid-template-columns: 1fr;
   }
-
+  /* 
   .btn,
   .btn:link,
   .btn:visited {
-    padding: 2.4rem 1.6rem;
-  }
+    padding: 2.1rem 2.6rem;
+  } */
 
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .section-bg::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    background-image: url(../img/background-matte.png);
+    background-repeat: no-repeat;
+    background-position: 6% 0;
+    background-size: cover;
+    z-index: 0;
   }
 
   .hero {

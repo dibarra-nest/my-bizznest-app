@@ -373,7 +373,7 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
-  background-image: linear-gradient(to right bottom, #d5eee4, #8ae29d);
+  background-image: linear-gradient(to right bottom, #d5eee4, #aff9bf);
   overflow: hidden;
 }
 
@@ -397,7 +397,7 @@
   background-image: linear-gradient(
       to right bottom,
       rgba(116, 230, 207, 0.35),
-      rgba(51, 232, 105, 0.35)
+      rgba(222, 245, 229, 0.35)
     ),
     url('../img/webdev-img.jpg');
   background-size: cover;
