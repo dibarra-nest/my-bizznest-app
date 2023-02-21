@@ -206,7 +206,7 @@ textarea {
 
 .heading-primary-styled {
   font-weight: 900;
-  font-size: 5.8rem;
+  font-size: 5.5rem;
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
@@ -247,10 +247,10 @@ textarea {
 }
 
 .heading-secondary {
-  font-size: 5.3rem;
+  font-size: 4.5rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 4rem;
+  margin-bottom: 6.5rem;
 }
 
 .heading-secondary--center {
