@@ -202,7 +202,7 @@
     color: var(--color-primary-50);
   }
 
-  .section::before {
+  .section-about::before {
     content: '';
     position: absolute;
     top: -20px;
@@ -263,7 +263,7 @@
     padding: 8.9rem 0;
   }
 
-  .section-bg::before {
+  /* .section-bg::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -276,7 +276,7 @@
     background-position: 6% 0;
     background-size: cover;
     z-index: 0;
-  }
+  } */
 
   .hero {
     padding: 0 3.2rem;
