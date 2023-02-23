@@ -157,8 +157,9 @@
 
 .section,
 .section-bg {
-  padding: 12.6rem 0;
+  padding: 9.6rem 0;
   position: relative;
+  transition: transform 1s, opacity 1s;
 }
 
 .section-how {
@@ -200,7 +201,7 @@
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
-  padding-bottom: 4rem;
+  padding-bottom: 3.8rem;
 }
 
 .step-description-secondary {
@@ -271,6 +272,7 @@
 .section-meals {
   padding: 12.6rem 0;
   position: relative;
+  background-color: var(--color-secondary-600);
 }
 
 .meal {
@@ -278,6 +280,7 @@
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
+  background-color: #fff;
 }
 
 .meal:hover {
@@ -401,7 +404,7 @@
       rgba(116, 230, 207, 0.35),
       rgba(222, 245, 229, 0.35)
     ),
-    url('../img/webdev-img.jpg');
+    url('../img/img-video.jpeg');
   background-size: cover;
   background-position: center;
 }

@@ -1,15 +1,45 @@
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
-
 const btnNavEl = document.querySelector('.btn-mobile-nav');
 const headerEl = document.querySelector('.header');
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
 
 btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
 });
 
+///////////////////////////////////////
+// Button scrolling
+btnScrollTo.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
+
 ///////////////////////////////////////////////////////////
-// Smooth scrolling animation
+// Fixing flexbox gap property missing in some Safari versions
+function checkFlexGap() {
+  var flex = document.createElement('div');
+  flex.style.display = 'flex';
+  flex.style.flexDirection = 'column';
+  flex.style.rowGap = '1px';
+
+  flex.appendChild(document.createElement('div'));
+  flex.appendChild(document.createElement('div'));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
+
+  if (!isSupported) document.body.classList.add('no-flexbox-gap');
+}
+checkFlexGap();
+
+///////////////////////////////////////////////////////////
+// Smooth scrolling animation (IF PROJECT IS ALL CONTAINED WITHIN MAIN REPO)
 
 // const allLinks = document.querySelectorAll('a:link');
 
@@ -36,23 +66,3 @@ btnNavEl.addEventListener('click', function () {
 //       headerEl.classList.toggle('nav-open');
 //   });
 // });
-
-///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
-function checkFlexGap() {
-  var flex = document.createElement('div');
-  flex.style.display = 'flex';
-  flex.style.flexDirection = 'column';
-  flex.style.rowGap = '1px';
-
-  flex.appendChild(document.createElement('div'));
-  flex.appendChild(document.createElement('div'));
-
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
-
-  if (!isSupported) document.body.classList.add('no-flexbox-gap');
-}
-checkFlexGap();

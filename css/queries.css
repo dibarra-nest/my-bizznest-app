@@ -258,6 +258,10 @@
   .step-img-box {
     transform: translateY(2.4rem);
   }
+  .section,
+  .section-bg {
+    padding: 8.9rem 0;
+  }
 
   .section-bg::before {
     content: '';
@@ -280,6 +284,10 @@
 
   .hero-img {
     width: 80%;
+  }
+
+  .section-meals {
+    padding: 12.6rem 0.5rem;
   }
 
   .logos img {
