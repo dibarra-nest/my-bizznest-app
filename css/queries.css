@@ -47,9 +47,9 @@
     gap: 4.8rem;
   }
 
-  .testimonials-container {
+  /* .testimonials-container {
     padding: 9.6rem 3.2rem;
-  }
+  } */
 }
 
 /**************************/
@@ -94,9 +94,9 @@
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
 
-  .section-testimonials {
+  /* .section-testimonials {
     grid-template-columns: 1fr;
-  }
+  } */
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
