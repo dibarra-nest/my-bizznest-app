@@ -27,6 +27,11 @@
     row-gap: 6.4rem;
   }
 
+  .section-hero {
+    /* background-color: #fdf2e9; */
+    background-image: url(../img/bizznest-banner.webp);
+  }
+
   .heading-secondary {
     font-size: 3.9rem;
   }
@@ -84,6 +89,11 @@
 
   .logos img {
     height: 2.4rem;
+  }
+
+  .section-hero {
+    /* background-color: #fdf2e9; */
+    background-image: url(../img/bizznest-banner-min.jpg);
   }
 
   .step-number {
