@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/dibarra-nest/my-bizznest-app/issues"
   },
-  "homepage": "https://github.com/dibarra-nest/my-bizznest-app#readme",
-  "devDependencies": {
-    "@netlify/plugin-lighthouse": "^4.0.7"
-  }
+  "homepage": "https://github.com/dibarra-nest/my-bizznest-app#readme"
 }
