@@ -1,0 +1,22 @@
+{
+  "name": "my-bizznest-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dibarra-nest/my-bizznest-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dibarra-nest/my-bizznest-app/issues"
+  },
+  "homepage": "https://github.com/dibarra-nest/my-bizznest-app#readme",
+  "devDependencies": {
+    "@netlify/plugin-lighthouse": "^4.0.7"
+  }
+}
