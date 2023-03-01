@@ -4,8 +4,7 @@ package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "public"
 
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
+  
 
 [plugins.inputs.thresholds]
     performance = 0.9
