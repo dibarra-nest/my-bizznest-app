@@ -34,3 +34,4 @@ Primary: #BA2D8E #72C6A4
 - Optimizations
 - Alt Tags for SEO
 - Button links
+- Setting up Algolia
