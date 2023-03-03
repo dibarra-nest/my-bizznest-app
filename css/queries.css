@@ -32,10 +32,6 @@
     background-image: url(../img/bizznest-banner.webp);
   }
 
-  .heading-secondary {
-    font-size: 3.9rem;
-  }
-
   .heading-tertiary {
     font-size: 2.4rem;
   }
@@ -103,10 +99,6 @@
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
-
-  /* .section-testimonials {
-    grid-template-columns: 1fr;
-  } */
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
@@ -186,6 +178,16 @@
     font-size: 3rem;
     color: #333;
   }
+
+  .subheading {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.95px;
+  }
+
+  .grid-scroller {
+    grid-auto-columns: 55%;
+  }
 }
 
 /**************************/
@@ -225,6 +227,10 @@
     background-position: 100% 0;
     background-size: cover;
     z-index: 0;
+  }
+
+  .grid-scroller {
+    grid-auto-columns: 85%;
   }
 }
 
@@ -273,21 +279,6 @@
     padding: 8.9rem 0;
   }
 
-  /* .section-bg::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-    background-image: url(../img/background-matte.png);
-    background-repeat: no-repeat;
-    background-position: 6% 0;
-    background-size: cover;
-    z-index: 0;
-  } */
-
   .hero {
     padding: 0 3.2rem;
   }
@@ -314,6 +305,43 @@
 
   .step-img-box {
     transform: translateY(2.4rem);
+  }
+
+  .grid-scroller {
+    grid-auto-columns: 90%;
+    gap: 5em;
+  }
+
+  .grid-scroller > * {
+    padding: 4.8em 3em;
+    border-radius: 20px;
+  }
+
+  .scroller {
+    width: 95%;
+    padding: 4.8em 3em;
+  }
+
+  .testimonialtest__text {
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin-bottom: 4.5rem;
+    line-height: 27px;
+  }
+  .testimonialtest__job {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+  }
+
+  .testimonialtest__name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
   }
 
   .cta {
