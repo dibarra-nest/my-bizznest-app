@@ -122,6 +122,8 @@
   background-position: center;
   background-size: cover;
 
+  position: relative;
+
   /* padding: 9.8rem 0 12.6rem 0; */
   padding: 4.8rem 0 9.6rem 0;
 }
@@ -405,6 +407,8 @@
   /* background-image: linear-gradient(to right, #fce8f6c8, #dd96c748); */
   background-color: #e6fdf455;
   padding: 15.3rem 0 18.5rem 0;
+  /* background-color: #ff96dc59; */
+  background-image: linear-gradient(to right, #ecffefe5, #fefff6f7);
 }
 
 .grid-scroller {
@@ -424,6 +428,7 @@
 .testimonialtest {
   /* background-color: #a0f0cf90; */
   background-image: linear-gradient(to right, #d8fcee78, #80e4ba83);
+  border: solid 2px rgba(231, 98, 189, 0.926);
 
   border-radius: 10px;
   /* top | left and right | bottom */
@@ -440,7 +445,7 @@
 
 .testimonialtest:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3.2rem 6.4rem rgba(214, 19, 159, 0.156);
 }
 
 .scroller {
