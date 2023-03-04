@@ -35,3 +35,11 @@ Primary: #BA2D8E #72C6A4
 - Alt Tags for SEO
 - Button links
 - Setting up Algolia
+
+# Plug Ins
+
+@netlify/plugin-emails
+netlify-plugin-minify-html
+@netlify/plugin-lighthouse
+@netlify/plugin-sitemap
+@algolia/netlify-plugin-crawler

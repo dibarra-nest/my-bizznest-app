@@ -413,11 +413,11 @@
   grid-auto-columns: 38.888%;
   gap: 1em;
   overflow-x: scroll;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 .grid-scroller > * {
-  padding: 4.8em 3em;
+  padding: 4.8em 2em;
   border-radius: 20px;
 }
 
@@ -435,12 +435,12 @@
   max-width: 485px;
   position: relative;
   transition: all 0.2s;
-  box-shadow: 0 1rem 2rem rgba(#161616, 0.4);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .testimonialtest:hover {
-  transform: translateY(-20px) scale(1.015);
-  box-shadow: 0 2rem 2rem rgba(#222 0.15);
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .scroller {
